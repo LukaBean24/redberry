@@ -23,3 +23,12 @@
   color: #fe3b1f;
   margin: 2rem 0;
 }
+
+.back-button {
+  color: #fe3b1f;
+  font-size: 50px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
