@@ -9,6 +9,7 @@ const store = configureStore({
     page: pageSlice,
     infoChange: infoChangeSlice,
   },
+  devTools: false,
 })
 
 export default store
