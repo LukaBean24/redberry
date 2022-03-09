@@ -12,7 +12,6 @@ const AppCard = ({ data, number }) => {
       })
       .then((data) => {
         setSkills(data)
-        console.log(data)
       })
   }, [])
   return (
