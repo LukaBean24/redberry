@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container {
+  width: 50vw;
+  height: 100vh;
+  background-color: black;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  position: absolute;
+  top: 4rem;
+}
+
+.title h3 {
+  font-family: 'Rowdies', cursive;
+  font-size: 45px;
+  color: #fe3b1f;
+}
+
+.story {
+  position: absolute;
+  top: 20rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.story p {
+  font-size: 18px;
+  line-height: 48px;
+  padding: 0rem 9rem;
+  letter-spacing: 5%;
+  color: white;
+}

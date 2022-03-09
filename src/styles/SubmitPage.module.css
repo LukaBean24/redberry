@@ -1,0 +1,27 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  width: 250px;
+  height: 55px;
+  background-color: #fe3b1f;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 2rem 0;
+}
+
+.container p {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}

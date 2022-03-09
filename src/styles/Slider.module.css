@@ -1,0 +1,26 @@
+.slider {
+  width: 300px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 90%;
+}
+
+.slider span {
+  border: 2px solid #fe3b1f;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.arrow {
+  color: #fe3b1f;
+  cursor: pointer;
+}
+
+.message {
+  color: black;
+}
