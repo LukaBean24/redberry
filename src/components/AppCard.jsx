@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import classes from '../styles/AppCard.module.css'
-import { AiOutlineDown, AiOutlineCalendar } from 'react-icons/ai'
+import { AiOutlineDown } from 'react-icons/ai'
 
 const AppCard = ({ data, number }) => {
   const [isOpen, setIsOpen] = useState(false)
