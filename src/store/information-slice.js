@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-const date = new Date('000010101')
+const date = new Date()
 const today = date.getDate()
 const dd = String(today + 1).padStart(2, '0')
 const month = date.getMonth()

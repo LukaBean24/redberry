@@ -171,9 +171,13 @@ const AppCard = ({ data, number }) => {
                 />
                 <p>No</p>
               </span>
-              <br />
-              <p>What would you speak about at Devtalk?</p>
-              <span className={classes.textarea}>{data.devtalk_topic}</span>
+              {data.will_organize_devtalk === true && (
+                <>
+                  <br />
+                  <p>What would you speak about at Devtalk?</p>
+                  <span className={classes.textarea}>{data.devtalk_topic}</span>
+                </>
+              )}
               <br />
               <p>Tell us something special</p>
               <span className={classes.textarea}>{data.something_special}</span>

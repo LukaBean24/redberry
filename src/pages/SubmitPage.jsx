@@ -12,31 +12,12 @@ const SubmitPage = () => {
   const token = `59513494-213d-4f9d-a35c-178604ae438b`
   const skills = useSelector((state) => state.info.skills)
 
-  // const vaccinationDate =
-  //   String(info.vaccinated_at.getDate()).padStart(2, '0') +
-  //   '-' +
-  //   String(info.vaccinated_at.getMonth()).padStart(2, '0') +
-  //   '-' +
-  //   submittedInfo.vaccinated_at.getFullYear()
-  // const covidnDate =
-  //   String(info.covid_at.getDate()).padStart(2, '0') +
-  //   '-' +
-  //   String(info.covid_at.getMonth()).padStart(2, '0') +
-  //   '-' +
-  //   submittedInfo.covid_at.getFullYear()
-
   const submittedInfo = {
     token,
     had_covid: info.covidInfo.had_covid === 'true' ? true : false,
-    had_covid_at:
-      info.covidInfo.had_covid === 'true'
-        ? info.covidInfo.had_covid_at
-        : 'No covid',
+    had_covid_at: info.covidInfo.had_covid_at,
     vaccinated: info.covidInfo.vaccinated === 'true' ? true : false,
-    vaccinated_at:
-      info.covidInfo.vaccinated === 'true'
-        ? info.covidInfo.vaccinated_at
-        : 'No vaccination',
+    vaccinated_at: info.covidInfo.vaccinated_at,
     work_preference: info.covidInfo.work_preference,
     devtalk_topic: info.devtalk.will_organize_devtalk,
     will_organize_devtalk:

@@ -11,7 +11,7 @@ const Insight = () => {
   const dispatch = useDispatch()
   const devtalkInfo = useSelector((state) => state.info.devtalk)
   const infoChange = useSelector((state) => state.infoChange.devtalk)
-  console.log(infoChange)
+
   const radioChangeHandler = (e) => {
     dispatch(informationActions.devtalkOrganize(e.target.value))
     dispatch(infoChangeActions.devtalkChange())
@@ -80,7 +80,7 @@ const Insight = () => {
             placeholder={devtalkInfo.something_special}
           ></textarea>
         </div>
-        <Slider number={4} valid={infoChange} />
+        <Slider number={4} valid={infoChange ? true : false} />
       </div>
       <StoryContainer
         title='Redberrian Insights'

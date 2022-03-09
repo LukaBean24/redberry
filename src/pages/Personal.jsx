@@ -93,7 +93,7 @@ const Personal = () => {
             value={info.email}
             className={
               info.email && !info.email.match(emailValidator)
-                ? classes.input_class
+                ? classes.invalid
                 : classes.valid
             }
           />
